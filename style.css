@@ -1,0 +1,20 @@
+:root {
+    --blue: #337ab7;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: monospace;
+    border-top: 5px solid var(--blue) !important;
+}
+.btn-custom {
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+.btn-custom:hover {
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+    color: white;
+}
