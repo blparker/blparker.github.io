@@ -12,6 +12,14 @@
             width: 75px;
             height: 75px;
         }
+        @media (min-width: 992px) {
+            #projects .card-img-top {
+                /* height: 150px; */
+                /* object-fit: cover; */
+                width: 100%;
+                height: 15vw;
+            }
+        }
     </style>
   </head>
   <body class="bg-light">
@@ -27,11 +35,11 @@
         </div>
 
         <h1 class="fs-2 py-5">Projects</h1>
-        <div class="container text-center mt-5">
+        <div class="container text-center mt-5" id="projects">
             <div class="row">
-                <div class="col"></div>
+                <!-- <div class="col"></div> -->
 
-                <div class="col">
+                <div class="col-12 col-lg-4">
                     <div class="card shadow-sm">
                         <img src="./vimath.png" class="card-img-top" alt="Vimath">
                         <div class="card-body">
@@ -41,27 +49,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg-4 mt-4 mt-lg-0">
                     <div class="card shadow-sm">
                         <img src="./canvas_test.png" class="card-img-top" alt="Canvas Test">
                         <div class="card-body">
                             <h5 class="card-title">Canvas Test</h5>
-                            <p class="card-text text-body-secondary fs-6">A library and UI for building visual canvas tests.</p>
+                            <p class="card-text text-body-secondary fs-6">A library and UI for building visual canvas tests and storing known good states.</p>
                             <a href="https://github.com/blparker/canvas-test" class="btn btn-primary">Go to Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg-4 mt-4 mt-lg-0">
                     <div class="card shadow-sm">
                         <img src="./linear_algebra.png" class="card-img-top" alt="Linear Algebra in Python">
                         <div class="card-body">
                             <h5 class="card-title">Linear Algebra in Python</h5>
-                            <p class="card-text text-body-secondary fs-6">A introductory guide for learning linear algebra, demonstrated in Python.</p>
+                            <p class="card-text text-body-secondary fs-6">An example driven introductory guide into the fundamentals of linear algebra using Python.</p>
                             <a href="http://linearalgebra.xyz/" class="btn btn-primary">Go to Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col"></div>
+
+                <!-- <div class="col"></div> -->
             </div>
         </div>
     </div>
